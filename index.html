@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class="container" align="center">
+        <h1>CALCULAOR</h1>
+        <form name="froms">
+            <div class="calc">
+                <input type="text" name="screen" id="answer">
+                <br>
+                <input type="button" value="1" onclick="froms.screen.value+='1'">
+                <input type="button" value="2" onclick="froms.screen.value+='2'">
+                <input type="button" value="3" onclick="froms.screen.value+='3'">
+                <input type="button" value="AC" onclick="froms.screen.value =''">
+                <br>
+                <input type="button" value="4" onclick="froms.screen.value+='4'">
+                <input type="button" value="5" onclick="froms.screen.value+='5'">
+                <input type="button" value="6" onclick="froms.screen.value+='6'">
+                <input type="button" value="+" onclick="froms.screen.value+='+'">
+                <br>
+                <input type="button" value="7" onclick="froms.screen.value+='7'">
+                <input type="button" value="8" onclick="froms.screen.value+='8'">
+                <input type="button" value="9" onclick="froms.screen.value+='9'">
+                <input type="button" value="-" onclick="froms.screen.value+='-'">
+                <br>
+                <input type="button" value="(" onclick="froms.screen.value+='('">
+                <input type="button" value="0" onclick="froms.screen.value+='0'">
+                <input type="button" value=")" onclick="froms.screen.value+=')'">
+                <input type="button" value="*" onclick="froms.screen.value+='*'">
+                <br>
+                <input type="button" value="." onclick="froms.screen.value+='.'">
+                <input type="button" value="/" onclick="froms.screen.value+='/'">
+                <input type="button" value="Del" onclick="froms.screen.value = froms.screen.value.substring(0,froms.screen.value.length-1)">
+                <input type="button" value="=" onclick="froms.screen.value = eval(froms.screen.value)">
+                <br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
